@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SkincareShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f72e1dba58.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src="index.js"></script>
+
+    <section class="contenedorPresentacion">
+
+        <div class="contenedorUno">
+            <div class="contenedorBlur">
+                <div class="nombreTienda">
+                    <h1 class="nombreUno">Skincare</h1>
+                    <h2 class="nombreDos">Shop</h2>
+                </div>
+                <div class="btnDeslizar">
+                    <button class="btnFlecha"><i class="fa-solid fa-arrow-down" id="btnFlechaAnimacion"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="secodContainer">
+            <div class="contenedorImagen"></div>
+            <img class="imagenPortada" src="./assets/img/portada-page.png" alt="portada-crema-hidratante">
+        </div>
+
+    </section>
+
+    <section class="contenedorTienda">
+        <header class="encabezadoTienda">
+            <button id="colorTema">
+                <i class="fa-solid fa-sun sol" id="sol"></i>
+                <i class="fa-solid fa-moon luna" id="luna"></i>
+            </button>
+        </header>
+        <main class="cuerpoTienda">
+            <nav class="navbar">
+                <ul>
+                    <li><button class="btn-categoria" id="todos-los-productos">Todos los productos</button></li>
+                    <li><button class="btn-categoria" id="agua-micelar">Agua micelar</button></li>
+                    <li><button class="btn-categoria" id="limpiador-facial">Limpiador facial</button></li>
+                    <li><button class="btn-categoria" id="contorno-ojos">Contorno de ojos</button></li>
+                    <li><button class="btn-categoria" id="serum">Serums</button></li>
+                    <li><button class="btn-categoria" id="crema-hidratante">Crema hidratante</button></li>
+                    <li><button class="btn-categoria" id="protector-solar">Protector solar</button></li>
+                    <li><a href="./carrito.html" class="link-carrito" id="link-carrito"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+                </ul>
+            </nav>
+            <div class="tienda" id="tienda">
+                <div class="contenedorProductos" id="contenedorProductos">
+
+                    <!-- <img class="img-producto" src="${producto.img}" alt="${producto.tipo} de ${producto.marca}">
+                    <div class="texto-producto">
+                        <h4 class="tipo-producto">${producto.tipo}</h4>
+                        <h5 class="marca">${producto.marca}</h5>
+                        <p class="precio">$${producto.precio}</p>
+                        <button class="btn-agregar-carrito" id="${producto.id}">Agregar al carrito</button>
+                    </div> -->
+
+                </div>
+            </div>
+        </main>
+    </section>
+    
+    <footer>
+        <div class="leftFooter">
+            <div class="titleFooter">
+                <h1 class="tituloUnoFooter">Skincare</h1>
+                <h2 class="tituloDosFooter">Shop</h2>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="rightFooter">
+            <h5 class="tituloNewsletter">Newsletter</h5>
+            <p class="textoNewsletter">Si queres recibir noticias sobre nuestros productos dejanos tu mail.</p>
+            <input type="email" name="" id="inputNewsletter" class="inputNewsletter">
+            <button class="enviar">Enviar</button>
+        </div>
+    </footer>
+    
+
+
+    <script src="./javascript/prueba.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - SkincareShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f72e1dba58.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="contenedorTienda">
+        <header class="encabezadoTienda">
+            <button id="colorTema">
+                <i class="fa-solid fa-sun sol" id="sol"></i>
+                <i class="fa-solid fa-moon luna" id="luna"></i>
+            </button>
+        </header>
+        <main class="cuerpoTienda">
+            <nav class="navbar-carrito">
+                <ul>
+                    <li><a href="./index.html" class="link-volver-tienda" id="link-carrito" ><i class="fa-solid fa-arrow-left"></i>Volver a la tienda</a></li>
+                </ul>
+            </nav>
+
+            <div class="contenedor-carrito-contenedor-total">
+                <div class="tienda-carrito" id="tienda-carrito">
+                    <div class="contenedor-titulo-bton-vaciar">
+                        <h3 class="titulo-carrito">Carrito</h3>
+                        <button id="vaciar-carrito" class="vaciar-carrito">VACIAR CARRITO</button>
+                    </div>
+                    <div class="contenedor-carrito" id="contenedor-carrito">
+    
+    
+                        <!-- <img class="img-producto-carrito" src="${producto.img}" alt="${producto.tipo} de ${producto.marca}">
+                        <div class="texto-producto-carrito">
+                            <div class="tipo-marca-producto-carrito">
+                                <h4 class="tipo-producto-carrito">${producto.tipo}</h4>
+                                <h5 class="marca-carrito">${producto.marca}</h5>
+                            </div>
+                            <div class="precio-eliminar-carrito">
+                                <div class="texto-precio-carrito">
+                                    <p class="precio-carrito">$${producto.precio}</p>
+                                </div>
+                                <button class="eliminar-carrito" id="${producto.id}">ELIMINAR</button>
+                            </div>
+                        </div> -->
+    
+    
+                    </div>
+                </div>
+    
+                <div class="contenedor-finalizar-compra">
+                    <p class="total-carrito"></p>
+                    <button class="btn-finalizar-compra">FINALIZAR COMPRA</button>
+                </div>
+            </div>
+
+        </main>
+    </section>
+    
+    <footer>
+        <div class="leftFooter">
+            <div class="titleFooter">
+                <h1 class="tituloUnoFooter">Skincare</h1>
+                <h2 class="tituloDosFooter">Shop</h2>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="rightFooter">
+            <h5 class="tituloNewsletter">Newsletter</h5>
+            <p class="textoNewsletter">Si queres recibir noticias sobre nuestros productos dejanos tu mail.</p>
+            <input type="email" name="" id="inputNewsletter" class="inputNewsletter">
+            <button class="enviar">Enviar</button>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./javascript/carrito.js"></script>
+</body>
+</html>
