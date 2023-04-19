@@ -486,6 +486,13 @@ footer {
     ;
 }
 
+.swal2-title, .swal2-html-container{
+    color: #000000;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
 
 
 

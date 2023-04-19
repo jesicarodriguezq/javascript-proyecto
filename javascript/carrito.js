@@ -84,12 +84,31 @@ function totalDeProductosCarrito() {
 }
 botonVaciarCarrito.addEventListener('click', vaciarCarrito)
 function vaciarCarrito() {
-    carritoDeTienda.length = 0;
-    localStorage.setItem('carrito', JSON.stringify(carritoDeTienda));
-    cargarProductosCarrito()
+    Swal.fire({
+        title: 'Segur@?',
+        text: "Tus productos se van a eliminar!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#19275f',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Eliminar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            carritoDeTienda.length = 0;
+            localStorage.setItem('carrito', JSON.stringify(carritoDeTienda));
+            cargarProductosCarrito()
+            Swal.fire(
+                'Eliminado!',
+                'Eliminaste tus productos',
+                'success'
+            )
+        }
+    })
 };
 botonFinalizarCompra.addEventListener('click', finalizarCompra)
 function finalizarCompra() {
+    
+    Swal.fire('Gracias por tu compra!')
     carritoDeTienda.length = 0;
     localStorage.setItem('carrito', JSON.stringify(carritoDeTienda));
     contenedorFinalizarCompra.classList.add('borrar-contenedor');
